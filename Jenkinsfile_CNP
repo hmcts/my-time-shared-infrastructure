@@ -4,7 +4,8 @@
 @Library("Infrastructure") _
 
 def product = 'my-time'
+def component = "shared-infrastructure"
 
-withInfraPipeline(product) {
+withInfraPipeline(product, component) {
   enableSlackNotifications('my-time-builds')
 }
